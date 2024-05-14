@@ -1,0 +1,1 @@
+"use strict";(()=>{var r=document.querySelectorAll('[count-me="true"]'),t=0,o=0;r.forEach(n=>{t+=n.textContent.split(" ").length,o+=n.getElementsByTagName("img").length});var s=Math.floor(t/250+o*10/60),a=t/250*60+o*10,e=document.querySelector("[data-read-time]");e&&(a<60?e.textContent="Less than 1":s===1?e.textContent="1":e.textContent=`${s}`);})();
